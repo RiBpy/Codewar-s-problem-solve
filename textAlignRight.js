@@ -13,12 +13,16 @@
 //     Last line should not contain '\n'
 
 
-// function alignRight(text,width){
-    
-//   }
-// console.log(alignRight("Two lines, I am",10))
+function alignRight(text,width){
+    let totalWidth=text.length;
+    perLineLen=totalWidth/width;
+
+    for(let i=0;i<=perLineLen;i++){
+       text[i]=text.slice(0,width)+"\n"
+       return text[i]+text.slice(text[i].length, text[i].length+width)
+    }
+  }
+console.log(alignRight("Gap between words can't differ by more than one space",10))
 
 
-let nu=123
-console.log(parseInt("100011",2))
-console.log(nu.toString(2))
+

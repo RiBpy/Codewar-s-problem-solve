@@ -10,8 +10,8 @@ var list1 = [
     let sl=list.sort(function (a, b) {
       return b.age - a.age;
     })
-   sl.map((item,i)=>{
-     if(sl[0].age===item.age){
+   sl.map((pAge,i)=>{
+     if(sl[0].age===pAge.age){
        res.push(sl[i])
      }
      })

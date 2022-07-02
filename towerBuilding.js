@@ -28,8 +28,6 @@ function towerBuilder(nFloors) {
     return tower
   }
 
-
-
 // function towerBuilder(nFloors) {
 //     var tower = [];
 //     for (var i = 0; i < nFloors; i++) {
