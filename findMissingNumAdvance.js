@@ -18,10 +18,13 @@
 //     return missing
 //   }
 
+
+
+//positive and negative numbers
   var findMissing = function (list) {  
-   var expected_sum = (list[0] + list[list.length - 1]) * (list.length + 1) / 2;
+   var sumFromLaw = (list[0] + list[list.length - 1]) * (list.length + 1) / 2;   //only positive numbers-n*(n+1)/2
    var sum = list.reduce((a,b)=>a+b);
-   return expected_sum - sum;
+   return sumFromLaw - sum;
  }
   
   console.log(findMissing([-5,-1,1,3,5,7,9,11]))
