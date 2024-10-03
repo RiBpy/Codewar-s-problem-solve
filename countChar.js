@@ -21,8 +21,8 @@
                         
                      }
 
-                  console.log("booop-booop-deee-doo-dooop".characterCount(['a','d','o','o','d','a']));
-                  console.log("booop-booop-deee-doo-dooop".characterCount("ado"));
-                  console.log("booop".characterCount("p"));
-                  console.log("booop".characterCount());
-                  console.log("".characterCount());
+                  console.log("booop-booop-deee-doo-dooop".characterCount(['a','d','o','o','d','a'])); //[0, 3, 11, 11, 3, 0]
+                  console.log("booop-booop-deee-doo-dooop".characterCount("ado"));//[]
+                  console.log("booop".characterCount("p"));//[4]
+                  console.log("booop".characterCount());//undefined
+                  console.log("".characterCount());//undefinded
